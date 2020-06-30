@@ -23,6 +23,8 @@
 		381D8A6124AA43BC000C9950 /* PDKLocationAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D8A5D24AA43BC000C9950 /* PDKLocationAnnotation.h */; };
 		381D8A6224AA43BC000C9950 /* PDKLocationGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381D8A5E24AA43BC000C9950 /* PDKLocationGeneratorViewController.m */; };
 		381D8A6324AA43BC000C9950 /* PDKLocationGeneratorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D8A5F24AA43BC000C9950 /* PDKLocationGeneratorViewController.h */; };
+		80555DD530D94E6FBF693FC2 /* Pods_PDKLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16208D9A7B330A7D475A204 /* Pods_PDKLocation.framework */; };
+		ADE77ADE05C36C28F324D575 /* Pods_PDKLocationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022045E6B28E417950ECC631 /* Pods_PDKLocationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		022045E6B28E417950ECC631 /* Pods_PDKLocationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDKLocationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D32432F2F937E880F336887 /* Pods-PDKLocationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDKLocationTests.release.xcconfig"; path = "Target Support Files/Pods-PDKLocationTests/Pods-PDKLocationTests.release.xcconfig"; sourceTree = "<group>"; };
 		381D8A2D24AA3F57000C9950 /* PDKLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDKLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		381D8A3024AA3F57000C9950 /* PDKLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PDKLocation.h; path = Source/PDKLocation.h; sourceTree = "<group>"; };
 		381D8A3124AA3F57000C9950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +59,10 @@
 		381D8A5D24AA43BC000C9950 /* PDKLocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKLocationAnnotation.h; path = Source/Interface/PDKLocationAnnotation.h; sourceTree = "<group>"; };
 		381D8A5E24AA43BC000C9950 /* PDKLocationGeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDKLocationGeneratorViewController.m; path = Source/Interface/PDKLocationGeneratorViewController.m; sourceTree = "<group>"; };
 		381D8A5F24AA43BC000C9950 /* PDKLocationGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKLocationGeneratorViewController.h; path = Source/Interface/PDKLocationGeneratorViewController.h; sourceTree = "<group>"; };
+		7F898F0E0DA0EEAE6B0FA14B /* Pods-PDKLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDKLocation.debug.xcconfig"; path = "Target Support Files/Pods-PDKLocation/Pods-PDKLocation.debug.xcconfig"; sourceTree = "<group>"; };
+		B16208D9A7B330A7D475A204 /* Pods_PDKLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDKLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA82D0480ADA4F0E1343C91E /* Pods-PDKLocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDKLocationTests.debug.xcconfig"; path = "Target Support Files/Pods-PDKLocationTests/Pods-PDKLocationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCD2F774F0F94A9DCCF1F802 /* Pods-PDKLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDKLocation.release.xcconfig"; path = "Target Support Files/Pods-PDKLocation/Pods-PDKLocation.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80555DD530D94E6FBF693FC2 /* Pods_PDKLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				381D8A3724AA3F57000C9950 /* PDKLocation.framework in Frameworks */,
+				ADE77ADE05C36C28F324D575 /* Pods_PDKLocationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +92,8 @@
 				381D8A2F24AA3F57000C9950 /* PDKLocation */,
 				381D8A3A24AA3F57000C9950 /* PDKLocationTests */,
 				381D8A2E24AA3F57000C9950 /* Products */,
+				D421DAD9F0BBEF4F6935F25E /* Pods */,
+				F83C30EC20F3ED015ADD2ECE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +161,27 @@
 			name = Interface;
 			sourceTree = "<group>";
 		};
+		D421DAD9F0BBEF4F6935F25E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F898F0E0DA0EEAE6B0FA14B /* Pods-PDKLocation.debug.xcconfig */,
+				CCD2F774F0F94A9DCCF1F802 /* Pods-PDKLocation.release.xcconfig */,
+				BA82D0480ADA4F0E1343C91E /* Pods-PDKLocationTests.debug.xcconfig */,
+				2D32432F2F937E880F336887 /* Pods-PDKLocationTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F83C30EC20F3ED015ADD2ECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B16208D9A7B330A7D475A204 /* Pods_PDKLocation.framework */,
+				022045E6B28E417950ECC631 /* Pods_PDKLocationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -173,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 381D8A4124AA3F57000C9950 /* Build configuration list for PBXNativeTarget "PDKLocation" */;
 			buildPhases = (
+				D00B63B90295E7C1F4213EA3 /* [CP] Check Pods Manifest.lock */,
 				381D8A2824AA3F57000C9950 /* Headers */,
 				381D8A2924AA3F57000C9950 /* Sources */,
 				381D8A2A24AA3F57000C9950 /* Frameworks */,
@@ -191,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 381D8A4424AA3F57000C9950 /* Build configuration list for PBXNativeTarget "PDKLocationTests" */;
 			buildPhases = (
+				416B57D949F2211464517504 /* [CP] Check Pods Manifest.lock */,
 				381D8A3224AA3F57000C9950 /* Sources */,
 				381D8A3324AA3F57000C9950 /* Frameworks */,
 				381D8A3424AA3F57000C9950 /* Resources */,
+				CA553304B237778F25ABC968 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +293,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		416B57D949F2211464517504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDKLocationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA553304B237778F25ABC968 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PDKLocationTests/Pods-PDKLocationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PDKLocationTests/Pods-PDKLocationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PDKLocationTests/Pods-PDKLocationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D00B63B90295E7C1F4213EA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDKLocation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		381D8A2924AA3F57000C9950 /* Sources */ = {
@@ -410,6 +510,7 @@
 		};
 		381D8A4224AA3F57000C9950 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F898F0E0DA0EEAE6B0FA14B /* Pods-PDKLocation.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -433,6 +534,7 @@
 		};
 		381D8A4324AA3F57000C9950 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD2F774F0F94A9DCCF1F802 /* Pods-PDKLocation.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -456,6 +558,7 @@
 		};
 		381D8A4524AA3F57000C9950 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA82D0480ADA4F0E1343C91E /* Pods-PDKLocationTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V664K3X7J4;
@@ -473,6 +576,7 @@
 		};
 		381D8A4624AA3F57000C9950 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D32432F2F937E880F336887 /* Pods-PDKLocationTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V664K3X7J4;

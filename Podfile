@@ -2,6 +2,7 @@ platform :ios, '9.0'
 
 def required_pods
   pod 'AFNetworking', '~> 4.0'
+  pod 'DTMHeatmap'
   pod 'PassiveDataKit', :git => 'https://github.com/audacious-software/PassiveDataKit-iOS.git'
 end
 
