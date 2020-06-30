@@ -230,24 +230,26 @@ static PDKGeofencesGenerator * sharedObject = nil;
         
         [manager GET:[defaults valueForKey:PDKGeofencesURL]
           parameters:@{}
+             headers:@{}
             progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        }
+             success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [defaults setValue:responseObject[@"features"] forKey:CACHED_GEOFENCES];
+            [defaults setValue:@(YES) forKey:FORCE_RELOAD_GEOFENCES];
+            [defaults removeObjectForKey:LOCATION_LAST_UPDATED];
+            [defaults synchronize];
 
-            } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                [defaults setValue:responseObject[@"features"] forKey:CACHED_GEOFENCES];
-                [defaults setValue:@(YES) forKey:FORCE_RELOAD_GEOFENCES];
-                [defaults removeObjectForKey:LOCATION_LAST_UPDATED];
-                [defaults synchronize];
+            [self.locationManager requestLocation];
 
-                [self.locationManager requestLocation];
-
-                if (callback != nil) {
-                    callback();
-                }
-            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                if (callback != nil) {
-                    callback();
-                }
-            }];
+            if (callback != nil) {
+                callback();
+            }
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            if (callback != nil) {
+                callback();
+            }
+        }];
     }
 }
 
@@ -476,7 +478,7 @@ static PDKGeofencesGenerator * sharedObject = nil;
         [data setValue:stateDesc forKey:PDKGeofenceTransition];
 
         for (id<PDKDataListener> listener in self.listeners) {
-            [listener receivedData:data forGenerator:PDKGeofences];
+            [listener receivedData:data forCustomGenerator:[self generatorId]];
         }
     }
 }

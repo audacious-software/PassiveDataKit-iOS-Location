@@ -301,7 +301,8 @@ static PDKDarkSkyWeatherGenerator * sharedObject = nil;
                                                                             NSLog(@"Error while inserting data. %d '%s'", retVal, sqlite3_errmsg(self.database));
                                                                         }
                                                                         
-                                                                        [[PassiveDataKit sharedInstance] receivedData:data forGenerator:PDKDarkSkyWeather];
+                                                                        [[PassiveDataKit sharedInstance] receivedData:data
+                                                                                                   forCustomGenerator:[self generatorId]];
                                                                     }
                                                                 }
                                                                 

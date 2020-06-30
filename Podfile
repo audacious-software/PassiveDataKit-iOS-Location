@@ -1,7 +1,8 @@
 platform :ios, '9.0'
 
 def required_pods
-  pod 'AFNetworking', '~> 3.0'
+  pod 'AFNetworking', '~> 4.0'
+  pod 'PassiveDataKit', :git => 'https://github.com/audacious-software/PassiveDataKit-iOS.git'
 end
 
 target 'PDKLocation' do

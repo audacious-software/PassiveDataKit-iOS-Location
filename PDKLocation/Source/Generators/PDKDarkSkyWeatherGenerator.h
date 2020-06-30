@@ -8,7 +8,7 @@
 
 @import Foundation;
 
-#import "PDKBaseGenerator.h"
+@import PassiveDataKit;
 
 extern NSString * _Nonnull const PDKDarkSkyAPIKey;
 

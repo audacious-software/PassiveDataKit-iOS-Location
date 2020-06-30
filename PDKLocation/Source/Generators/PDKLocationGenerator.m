@@ -441,7 +441,8 @@ static PDKLocationGenerator * sharedObject = nil;
                 }
                 
                 for (id<PDKDataListener> listener in self.listeners) {
-                    [listener receivedData:data forGenerator:PDKLocation];
+                    [[PassiveDataKit sharedInstance] receivedData:data
+                                               forCustomGenerator:[self generatorId]];
                 }
             }
         }
@@ -485,7 +486,8 @@ static PDKLocationGenerator * sharedObject = nil;
         [data setValue:[NSNumber numberWithDouble:location.coordinate.longitude] forKey:PDKLocationLongitude];
 
         for (id<PDKDataListener> listener in self.listeners) {
-            [listener receivedData:data forGenerator:PDKLocation];
+            [[PassiveDataKit sharedInstance] receivedData:data
+                                       forCustomGenerator:[self generatorId]];
         }
     } else if ([PDKLocationAccuracyModeDisabled isEqualToString:self.mode]) { //!OCLINT
         // Do nothing...

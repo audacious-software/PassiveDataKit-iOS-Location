@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "PDKLocation"
+  spec.name         = "PassiveDataKitLocation"
   spec.version      = "0.0.1"
   spec.summary      = "Framework for restoring location-based generators to PassiveDataKit."
 
@@ -94,8 +94,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Source", "Source/**/*.{h,m}"
-  spec.exclude_files = "Source/Exclude"
+  spec.source_files  = "PDKLocation/Source", "PDKLocation/Source/**/*.{h,m}"
+  # spec.exclude_files = "Source/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -137,7 +137,7 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
-  spec.dependency "AFNetworking", "~> 3.0"
+  spec.dependency "AFNetworking", "~> 4.0"
   spec.dependency "PassiveDataKit"
 end
 

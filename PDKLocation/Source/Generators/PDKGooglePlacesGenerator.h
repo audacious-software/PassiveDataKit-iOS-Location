@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "PassiveDataKit.h"
-#import "PDKBaseGenerator.h"
+@import PassiveDataKit;
 
 @interface PDKGooglePlacesGenerator : PDKBaseGenerator<PDKDataListener>
 

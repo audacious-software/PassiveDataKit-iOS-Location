@@ -8,7 +8,6 @@
 
 #import "PDKLocation.h"
 
-
 NSString * const PDKDarkSkyWeatherAPIKey = @"PDKDarkSkyWeatherAPIKey"; //!OCLINT
 
 @implementation PDKLocation

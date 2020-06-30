@@ -10,9 +10,7 @@
 @import CoreLocation;
 @import MapKit;
 
-#import "PassiveDataKit.h"
-
-#import "PDKBaseGenerator.h"
+@import PassiveDataKit;
 
 extern NSString *const PDKLocationAccuracyMode;
 extern NSString *const PDKLocationAccuracyModeBest;

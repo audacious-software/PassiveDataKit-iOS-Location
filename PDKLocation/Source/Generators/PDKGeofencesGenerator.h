@@ -9,7 +9,7 @@
 @import Foundation;
 @import CoreLocation;
 
-#import "PDKBaseGenerator.h"
+@import PassiveDataKit;
 
 NS_ASSUME_NONNULL_BEGIN
 

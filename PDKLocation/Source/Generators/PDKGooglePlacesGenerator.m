@@ -10,6 +10,8 @@
 
 @import AFNetworking;
 
+#import "PDKLocation.h"
+
 #import "PDKGooglePlacesGenerator.h"
 #import "PDKLocationGenerator.h"
 
@@ -102,8 +104,10 @@ static PDKGooglePlacesGenerator * sharedObject = nil;
         [self transmitPlacesForFreetextQuery:self.lastOptions[PDKGooglePlacesFreetextQuery]];
     } else {
         if (self.listeners.count == 1) {
-            [[PassiveDataKit sharedInstance] registerListener:self forGenerator:PDKLocation options:options];
-            
+            [[PassiveDataKit sharedInstance] registerListener:self
+                                           forCustomGenerator:[[PDKLocationGenerator sharedInstance] generatorId]
+                                                      options:options];
+
             [[PDKLocationGenerator sharedInstance] updateOptions:options];
         }
     }
@@ -205,7 +209,10 @@ static PDKGooglePlacesGenerator * sharedObject = nil;
             manager.responseSerializer = [AFHTTPResponseSerializer serializer];
             manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", nil];
             
-            [manager GET:[weakSelf urlForLocation:location].absoluteString parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+            [manager GET:[weakSelf urlForLocation:location].absoluteString
+              parameters:@{}
+                headers:@{}
+                progress:nil success:^(NSURLSessionTask *task, id responseObject) {
 
                 NSError * error = nil;
 
@@ -231,7 +238,8 @@ static PDKGooglePlacesGenerator * sharedObject = nil;
                     }
                 }
                 for (id<PDKDataListener> listener in weakSelf.listeners) {
-                    [listener receivedData:data forGenerator:PDKGooglePlaces];
+                    [listener receivedData:data
+                        forCustomGenerator:[[PDKGooglePlacesGenerator sharedInstance] generatorId]];
                 }
             } failure:^(NSURLSessionTask *operation, NSError *error) {
                 NSLog(@"ERROR: %@", error);
@@ -259,7 +267,11 @@ static PDKGooglePlacesGenerator * sharedObject = nil;
             manager.responseSerializer = [AFHTTPResponseSerializer serializer];
             manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", nil];
             
-            [manager GET:[weakSelf urlForFreetextQuery:query].absoluteString parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+            [manager GET:[weakSelf urlForFreetextQuery:query].absoluteString
+              parameters:@{}
+                headers:@{}
+                progress:nil
+                 success:^(NSURLSessionTask *task, id responseObject) {
                 
                 NSError * error = nil;
                 
@@ -286,7 +298,7 @@ static PDKGooglePlacesGenerator * sharedObject = nil;
                 }
                 
                 for (id<PDKDataListener> listener in weakSelf.listeners) {
-                    [listener receivedData:data forGenerator:PDKGooglePlaces];
+                    [listener receivedData:data forGenerator:[self generatorId]];
                 }
             } failure:^(NSURLSessionTask *operation, NSError *error) {
                 NSLog(@"ERROR: %@", error);
