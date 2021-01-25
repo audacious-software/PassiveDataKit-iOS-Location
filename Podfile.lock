@@ -19,14 +19,14 @@ PODS:
     - AppAuth/ExternalUserAgent (= 1.4.0)
   - AppAuth/Core (1.4.0)
   - AppAuth/ExternalUserAgent (1.4.0)
-  - Charts (3.4.0):
-    - Charts/Core (= 3.4.0)
-  - Charts/Core (3.4.0)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - DTMHeatmap (1.0)
   - PassiveDataKit (0.0.1):
     - AFNetworking (~> 4.0)
     - AppAuth (~> 1.4.0)
-    - Charts (~> 3.4.0)
+    - Charts (~> 3.6.0)
     - DTMHeatmap
 
 DEPENDENCIES:
@@ -47,16 +47,16 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   PassiveDataKit:
-    :commit: b231d3b14c779f112618a6739b220402cedbf3f7
+    :commit: 6bed7a1245971aea1b57ad376c7ab56b5d7aa725
     :git: https://github.com/audacious-software/PassiveDataKit-iOS.git
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
-  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   DTMHeatmap: f5588af0730fbfe78c75d6d013f1932d7d327ab2
-  PassiveDataKit: c08d4de3fadf9ff1a67f41c66a162e31ad677720
+  PassiveDataKit: 7efb3d6957dbf4e20c646e060e0ebc4f897d9f7a
 
 PODFILE CHECKSUM: 466d32bfc5cee4b1f4f97cc1d14af2354f8e1831
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
