@@ -298,7 +298,7 @@ static PDKGooglePlacesGenerator * sharedObject = nil;
                 }
                 
                 for (id<PDKDataListener> listener in weakSelf.listeners) {
-                    [listener receivedData:data forGenerator:[self generatorId]];
+                    [listener receivedData:data forCustomGenerator:[self generatorId]];
                 }
             } failure:^(NSURLSessionTask *operation, NSError *error) {
                 NSLog(@"ERROR: %@", error);
