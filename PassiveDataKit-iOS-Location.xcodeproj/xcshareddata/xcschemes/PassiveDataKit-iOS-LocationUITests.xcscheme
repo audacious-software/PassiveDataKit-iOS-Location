@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1150"
+   LastUpgradeVersion = "1250"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
    </BuildAction>
    <TestAction
@@ -16,10 +16,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "381D8A3524AA3F57000C9950"
-               BuildableName = "PDKLocationTests.xctest"
-               BlueprintName = "PDKLocationTests"
-               ReferencedContainer = "container:PDKLocation.xcodeproj">
+               BlueprintIdentifier = "380D3EA726C60A6E009A1776"
+               BuildableName = "PassiveDataKit-iOS-LocationUITests.xctest"
+               BlueprintName = "PassiveDataKit-iOS-LocationUITests"
+               ReferencedContainer = "container:PassiveDataKit-iOS-Location.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

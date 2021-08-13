@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18CC3FE153367461B48FBFDF /* Pods_Test_Dummy_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D51765683DBEC04E6794A5 /* Pods_Test_Dummy_App.framework */; };
+		380D3EAB26C60A6E009A1776 /* PassiveDataKit_iOS_LocationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D3EAA26C60A6E009A1776 /* PassiveDataKit_iOS_LocationUITests.m */; };
+		380D3EB726C60AA6009A1776 /* PassiveDataKit_iOS_LocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D3EB626C60AA6009A1776 /* PassiveDataKit_iOS_LocationTests.m */; };
+		380D3EB926C60AA6009A1776 /* PassiveDataKit_iOS_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381D8A2D24AA3F57000C9950 /* PassiveDataKit_iOS_Location.framework */; };
+		380D3EC726C60ABE009A1776 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D3EC626C60ABE009A1776 /* AppDelegate.m */; };
+		380D3ECA26C60ABE009A1776 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D3EC926C60ABE009A1776 /* SceneDelegate.m */; };
+		380D3ECD26C60ABE009A1776 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D3ECC26C60ABE009A1776 /* ViewController.m */; };
+		380D3ED026C60ABE009A1776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380D3ECE26C60ABE009A1776 /* Main.storyboard */; };
+		380D3ED226C60AC1009A1776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380D3ED126C60AC1009A1776 /* Assets.xcassets */; };
+		380D3ED526C60AC1009A1776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380D3ED326C60AC1009A1776 /* LaunchScreen.storyboard */; };
+		380D3ED826C60AC1009A1776 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D3ED726C60AC1009A1776 /* main.m */; };
+		381D8A3E24AA3F57000C9950 /* PDKLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D8A3024AA3F57000C9950 /* PDKLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		381D8A4824AA425B000C9950 /* PDKLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 381D8A4724AA425B000C9950 /* PDKLocation.m */; };
+		381D8A5424AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 381D8A4C24AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.m */; };
+		381D8A5524AA43B1000C9950 /* PDKGooglePlacesGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 381D8A4D24AA43B1000C9950 /* PDKGooglePlacesGenerator.m */; };
+		381D8A5624AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D8A4E24AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.h */; };
+		381D8A5724AA43B1000C9950 /* PDKLocationGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D8A4F24AA43B1000C9950 /* PDKLocationGenerator.h */; };
+		381D8A5824AA43B1000C9950 /* PDKGeofencesGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 381D8A5024AA43B1000C9950 /* PDKGeofencesGenerator.m */; };
+		381D8A5924AA43B1000C9950 /* PDKLocationGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 381D8A5124AA43B1000C9950 /* PDKLocationGenerator.m */; };
+		381D8A5A24AA43B1000C9950 /* PDKGeofencesGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D8A5224AA43B1000C9950 /* PDKGeofencesGenerator.h */; };
+		381D8A5B24AA43B1000C9950 /* PDKGooglePlacesGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D8A5324AA43B1000C9950 /* PDKGooglePlacesGenerator.h */; };
+		381D8A6024AA43BC000C9950 /* PDKLocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 381D8A5C24AA43BC000C9950 /* PDKLocationAnnotation.m */; };
+		381D8A6124AA43BC000C9950 /* PDKLocationAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D8A5D24AA43BC000C9950 /* PDKLocationAnnotation.h */; };
+		381D8A6224AA43BC000C9950 /* PDKLocationGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381D8A5E24AA43BC000C9950 /* PDKLocationGeneratorViewController.m */; };
+		381D8A6324AA43BC000C9950 /* PDKLocationGeneratorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 381D8A5F24AA43BC000C9950 /* PDKLocationGeneratorViewController.h */; };
+		96AA63DB2282235E7A4CEAD2 /* Pods_PassiveDataKit_iOS_LocationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFE6EA23C4B222EFDB53870 /* Pods_PassiveDataKit_iOS_LocationTests.framework */; };
+		A30CB882DC1472F46E3DF092 /* Pods_PassiveDataKit_iOS_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281D34B9ED3B310E05D377ED /* Pods_PassiveDataKit_iOS_Location.framework */; };
+		D64028324991C1C05BD55B7C /* Pods_PassiveDataKit_iOS_LocationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F756D406A216F4611ED08448 /* Pods_PassiveDataKit_iOS_LocationUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		380D3EBA26C60AA6009A1776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381D8A2424AA3F57000C9950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 381D8A2C24AA3F57000C9950;
+			remoteInfo = "PassiveDataKit-iOS-Location";
+		};
+		380D3EDC26C60AE8009A1776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381D8A2424AA3F57000C9950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 380D3EC226C60ABE009A1776;
+			remoteInfo = "Test Dummy App";
+		};
+		380D3EDE26C60AEB009A1776 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 381D8A2424AA3F57000C9950 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 380D3EC226C60ABE009A1776;
+			remoteInfo = "Test Dummy App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022045E6B28E417950ECC631 /* Pods_PDKLocationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDKLocationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06EB9C671A87A714D9314838 /* Pods-PassiveDataKit-iOS-Location.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassiveDataKit-iOS-Location.debug.xcconfig"; path = "Target Support Files/Pods-PassiveDataKit-iOS-Location/Pods-PassiveDataKit-iOS-Location.debug.xcconfig"; sourceTree = "<group>"; };
+		281D34B9ED3B310E05D377ED /* Pods_PassiveDataKit_iOS_Location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassiveDataKit_iOS_Location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D32432F2F937E880F336887 /* Pods-PDKLocationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDKLocationTests.release.xcconfig"; path = "Target Support Files/Pods-PDKLocationTests/Pods-PDKLocationTests.release.xcconfig"; sourceTree = "<group>"; };
+		2DFE6EA23C4B222EFDB53870 /* Pods_PassiveDataKit_iOS_LocationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassiveDataKit_iOS_LocationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		380D3EA826C60A6E009A1776 /* PassiveDataKit-iOS-LocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PassiveDataKit-iOS-LocationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		380D3EAA26C60A6E009A1776 /* PassiveDataKit_iOS_LocationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassiveDataKit_iOS_LocationUITests.m; sourceTree = "<group>"; };
+		380D3EAC26C60A6E009A1776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380D3EB426C60AA6009A1776 /* PassiveDataKit-iOS-LocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PassiveDataKit-iOS-LocationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		380D3EB626C60AA6009A1776 /* PassiveDataKit_iOS_LocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PassiveDataKit_iOS_LocationTests.m; sourceTree = "<group>"; };
+		380D3EB826C60AA6009A1776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380D3EC326C60ABE009A1776 /* Test Dummy App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Dummy App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		380D3EC526C60ABE009A1776 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		380D3EC626C60ABE009A1776 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		380D3EC826C60ABE009A1776 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		380D3EC926C60ABE009A1776 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		380D3ECB26C60ABE009A1776 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		380D3ECC26C60ABE009A1776 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		380D3ECF26C60ABE009A1776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		380D3ED126C60AC1009A1776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		380D3ED426C60AC1009A1776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		380D3ED626C60AC1009A1776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380D3ED726C60AC1009A1776 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		381D8A2D24AA3F57000C9950 /* PassiveDataKit_iOS_Location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PassiveDataKit_iOS_Location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		381D8A3024AA3F57000C9950 /* PDKLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PDKLocation.h; path = Source/PDKLocation.h; sourceTree = "<group>"; };
+		381D8A3124AA3F57000C9950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381D8A4724AA425B000C9950 /* PDKLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PDKLocation.m; path = Source/PDKLocation.m; sourceTree = "<group>"; };
+		381D8A4C24AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDKDarkSkyWeatherGenerator.m; path = Source/Generators/PDKDarkSkyWeatherGenerator.m; sourceTree = "<group>"; };
+		381D8A4D24AA43B1000C9950 /* PDKGooglePlacesGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDKGooglePlacesGenerator.m; path = Source/Generators/PDKGooglePlacesGenerator.m; sourceTree = "<group>"; };
+		381D8A4E24AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKDarkSkyWeatherGenerator.h; path = Source/Generators/PDKDarkSkyWeatherGenerator.h; sourceTree = "<group>"; };
+		381D8A4F24AA43B1000C9950 /* PDKLocationGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKLocationGenerator.h; path = Source/Generators/PDKLocationGenerator.h; sourceTree = "<group>"; };
+		381D8A5024AA43B1000C9950 /* PDKGeofencesGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDKGeofencesGenerator.m; path = Source/Generators/PDKGeofencesGenerator.m; sourceTree = "<group>"; };
+		381D8A5124AA43B1000C9950 /* PDKLocationGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDKLocationGenerator.m; path = Source/Generators/PDKLocationGenerator.m; sourceTree = "<group>"; };
+		381D8A5224AA43B1000C9950 /* PDKGeofencesGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKGeofencesGenerator.h; path = Source/Generators/PDKGeofencesGenerator.h; sourceTree = "<group>"; };
+		381D8A5324AA43B1000C9950 /* PDKGooglePlacesGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKGooglePlacesGenerator.h; path = Source/Generators/PDKGooglePlacesGenerator.h; sourceTree = "<group>"; };
+		381D8A5C24AA43BC000C9950 /* PDKLocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDKLocationAnnotation.m; path = Source/Interface/PDKLocationAnnotation.m; sourceTree = "<group>"; };
+		381D8A5D24AA43BC000C9950 /* PDKLocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKLocationAnnotation.h; path = Source/Interface/PDKLocationAnnotation.h; sourceTree = "<group>"; };
+		381D8A5E24AA43BC000C9950 /* PDKLocationGeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDKLocationGeneratorViewController.m; path = Source/Interface/PDKLocationGeneratorViewController.m; sourceTree = "<group>"; };
+		381D8A5F24AA43BC000C9950 /* PDKLocationGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDKLocationGeneratorViewController.h; path = Source/Interface/PDKLocationGeneratorViewController.h; sourceTree = "<group>"; };
+		4BDCF51689E1CC403F03C72F /* Pods-PassiveDataKit-iOS-LocationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassiveDataKit-iOS-LocationTests.release.xcconfig"; path = "Target Support Files/Pods-PassiveDataKit-iOS-LocationTests/Pods-PassiveDataKit-iOS-LocationTests.release.xcconfig"; sourceTree = "<group>"; };
+		57D55F0AE5200D8C9DC608ED /* Pods-Test Dummy App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Dummy App.debug.xcconfig"; path = "Target Support Files/Pods-Test Dummy App/Pods-Test Dummy App.debug.xcconfig"; sourceTree = "<group>"; };
+		69CA7E5186AC163C24EE2AF9 /* Pods-Test Dummy App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Dummy App.release.xcconfig"; path = "Target Support Files/Pods-Test Dummy App/Pods-Test Dummy App.release.xcconfig"; sourceTree = "<group>"; };
+		740ED51370FB667C88F56A34 /* Pods-PassiveDataKit-iOS-LocationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassiveDataKit-iOS-LocationUITests.release.xcconfig"; path = "Target Support Files/Pods-PassiveDataKit-iOS-LocationUITests/Pods-PassiveDataKit-iOS-LocationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F898F0E0DA0EEAE6B0FA14B /* Pods-PDKLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDKLocation.debug.xcconfig"; path = "Target Support Files/Pods-PDKLocation/Pods-PDKLocation.debug.xcconfig"; sourceTree = "<group>"; };
+		8341C1C7A1D403E23E7F00B7 /* Pods-PassiveDataKit-iOS-Location.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassiveDataKit-iOS-Location.release.xcconfig"; path = "Target Support Files/Pods-PassiveDataKit-iOS-Location/Pods-PassiveDataKit-iOS-Location.release.xcconfig"; sourceTree = "<group>"; };
+		A5D51765683DBEC04E6794A5 /* Pods_Test_Dummy_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Dummy_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA82D0480ADA4F0E1343C91E /* Pods-PDKLocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDKLocationTests.debug.xcconfig"; path = "Target Support Files/Pods-PDKLocationTests/Pods-PDKLocationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0FA750CCD18F91BACF3BABC /* Pods-PassiveDataKit-iOS-LocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassiveDataKit-iOS-LocationUITests.debug.xcconfig"; path = "Target Support Files/Pods-PassiveDataKit-iOS-LocationUITests/Pods-PassiveDataKit-iOS-LocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCD2F774F0F94A9DCCF1F802 /* Pods-PDKLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDKLocation.release.xcconfig"; path = "Target Support Files/Pods-PDKLocation/Pods-PDKLocation.release.xcconfig"; sourceTree = "<group>"; };
+		E14795324C4C662613203942 /* Pods-PassiveDataKit-iOS-LocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassiveDataKit-iOS-LocationTests.debug.xcconfig"; path = "Target Support Files/Pods-PassiveDataKit-iOS-LocationTests/Pods-PassiveDataKit-iOS-LocationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F756D406A216F4611ED08448 /* Pods_PassiveDataKit_iOS_LocationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassiveDataKit_iOS_LocationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		380D3EA526C60A6E009A1776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64028324991C1C05BD55B7C /* Pods_PassiveDataKit_iOS_LocationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		380D3EB126C60AA6009A1776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380D3EB926C60AA6009A1776 /* PassiveDataKit_iOS_Location.framework in Frameworks */,
+				96AA63DB2282235E7A4CEAD2 /* Pods_PassiveDataKit_iOS_LocationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		380D3EC026C60ABE009A1776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CC3FE153367461B48FBFDF /* Pods_Test_Dummy_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381D8A2A24AA3F57000C9950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30CB882DC1472F46E3DF092 /* Pods_PassiveDataKit_iOS_Location.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		380D3EA926C60A6E009A1776 /* PassiveDataKit-iOS-LocationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				380D3EAA26C60A6E009A1776 /* PassiveDataKit_iOS_LocationUITests.m */,
+				380D3EAC26C60A6E009A1776 /* Info.plist */,
+			);
+			path = "PassiveDataKit-iOS-LocationUITests";
+			sourceTree = "<group>";
+		};
+		380D3EB526C60AA6009A1776 /* PassiveDataKit-iOS-LocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				380D3EB626C60AA6009A1776 /* PassiveDataKit_iOS_LocationTests.m */,
+				380D3EB826C60AA6009A1776 /* Info.plist */,
+			);
+			path = "PassiveDataKit-iOS-LocationTests";
+			sourceTree = "<group>";
+		};
+		380D3EC426C60ABE009A1776 /* Test Dummy App */ = {
+			isa = PBXGroup;
+			children = (
+				380D3EC526C60ABE009A1776 /* AppDelegate.h */,
+				380D3EC626C60ABE009A1776 /* AppDelegate.m */,
+				380D3EC826C60ABE009A1776 /* SceneDelegate.h */,
+				380D3EC926C60ABE009A1776 /* SceneDelegate.m */,
+				380D3ECB26C60ABE009A1776 /* ViewController.h */,
+				380D3ECC26C60ABE009A1776 /* ViewController.m */,
+				380D3ECE26C60ABE009A1776 /* Main.storyboard */,
+				380D3ED126C60AC1009A1776 /* Assets.xcassets */,
+				380D3ED326C60AC1009A1776 /* LaunchScreen.storyboard */,
+				380D3ED626C60AC1009A1776 /* Info.plist */,
+				380D3ED726C60AC1009A1776 /* main.m */,
+			);
+			path = "Test Dummy App";
+			sourceTree = "<group>";
+		};
+		381D8A2324AA3F57000C9950 = {
+			isa = PBXGroup;
+			children = (
+				381D8A2F24AA3F57000C9950 /* PDKLocation */,
+				380D3EA926C60A6E009A1776 /* PassiveDataKit-iOS-LocationUITests */,
+				380D3EB526C60AA6009A1776 /* PassiveDataKit-iOS-LocationTests */,
+				380D3EC426C60ABE009A1776 /* Test Dummy App */,
+				381D8A2E24AA3F57000C9950 /* Products */,
+				D421DAD9F0BBEF4F6935F25E /* Pods */,
+				F83C30EC20F3ED015ADD2ECE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		381D8A2E24AA3F57000C9950 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				381D8A2D24AA3F57000C9950 /* PassiveDataKit_iOS_Location.framework */,
+				380D3EA826C60A6E009A1776 /* PassiveDataKit-iOS-LocationUITests.xctest */,
+				380D3EB426C60AA6009A1776 /* PassiveDataKit-iOS-LocationTests.xctest */,
+				380D3EC326C60ABE009A1776 /* Test Dummy App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		381D8A2F24AA3F57000C9950 /* PDKLocation */ = {
+			isa = PBXGroup;
+			children = (
+				381D8A4924AA438A000C9950 /* Source */,
+				381D8A3124AA3F57000C9950 /* Info.plist */,
+			);
+			path = PDKLocation;
+			sourceTree = "<group>";
+		};
+		381D8A4924AA438A000C9950 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				381D8A4A24AA4395000C9950 /* Generators */,
+				381D8A4B24AA439D000C9950 /* Interface */,
+				381D8A3024AA3F57000C9950 /* PDKLocation.h */,
+				381D8A4724AA425B000C9950 /* PDKLocation.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		381D8A4A24AA4395000C9950 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				381D8A4E24AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.h */,
+				381D8A4C24AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.m */,
+				381D8A5224AA43B1000C9950 /* PDKGeofencesGenerator.h */,
+				381D8A5024AA43B1000C9950 /* PDKGeofencesGenerator.m */,
+				381D8A5324AA43B1000C9950 /* PDKGooglePlacesGenerator.h */,
+				381D8A4D24AA43B1000C9950 /* PDKGooglePlacesGenerator.m */,
+				381D8A4F24AA43B1000C9950 /* PDKLocationGenerator.h */,
+				381D8A5124AA43B1000C9950 /* PDKLocationGenerator.m */,
+			);
+			name = Generators;
+			sourceTree = "<group>";
+		};
+		381D8A4B24AA439D000C9950 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				381D8A5D24AA43BC000C9950 /* PDKLocationAnnotation.h */,
+				381D8A5C24AA43BC000C9950 /* PDKLocationAnnotation.m */,
+				381D8A5F24AA43BC000C9950 /* PDKLocationGeneratorViewController.h */,
+				381D8A5E24AA43BC000C9950 /* PDKLocationGeneratorViewController.m */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		D421DAD9F0BBEF4F6935F25E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F898F0E0DA0EEAE6B0FA14B /* Pods-PDKLocation.debug.xcconfig */,
+				CCD2F774F0F94A9DCCF1F802 /* Pods-PDKLocation.release.xcconfig */,
+				BA82D0480ADA4F0E1343C91E /* Pods-PDKLocationTests.debug.xcconfig */,
+				2D32432F2F937E880F336887 /* Pods-PDKLocationTests.release.xcconfig */,
+				06EB9C671A87A714D9314838 /* Pods-PassiveDataKit-iOS-Location.debug.xcconfig */,
+				8341C1C7A1D403E23E7F00B7 /* Pods-PassiveDataKit-iOS-Location.release.xcconfig */,
+				E14795324C4C662613203942 /* Pods-PassiveDataKit-iOS-LocationTests.debug.xcconfig */,
+				4BDCF51689E1CC403F03C72F /* Pods-PassiveDataKit-iOS-LocationTests.release.xcconfig */,
+				57D55F0AE5200D8C9DC608ED /* Pods-Test Dummy App.debug.xcconfig */,
+				69CA7E5186AC163C24EE2AF9 /* Pods-Test Dummy App.release.xcconfig */,
+				C0FA750CCD18F91BACF3BABC /* Pods-PassiveDataKit-iOS-LocationUITests.debug.xcconfig */,
+				740ED51370FB667C88F56A34 /* Pods-PassiveDataKit-iOS-LocationUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F83C30EC20F3ED015ADD2ECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				022045E6B28E417950ECC631 /* Pods_PDKLocationTests.framework */,
+				281D34B9ED3B310E05D377ED /* Pods_PassiveDataKit_iOS_Location.framework */,
+				2DFE6EA23C4B222EFDB53870 /* Pods_PassiveDataKit_iOS_LocationTests.framework */,
+				A5D51765683DBEC04E6794A5 /* Pods_Test_Dummy_App.framework */,
+				F756D406A216F4611ED08448 /* Pods_PassiveDataKit_iOS_LocationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		381D8A2824AA3F57000C9950 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381D8A3E24AA3F57000C9950 /* PDKLocation.h in Headers */,
+				381D8A5724AA43B1000C9950 /* PDKLocationGenerator.h in Headers */,
+				381D8A6124AA43BC000C9950 /* PDKLocationAnnotation.h in Headers */,
+				381D8A5B24AA43B1000C9950 /* PDKGooglePlacesGenerator.h in Headers */,
+				381D8A5A24AA43B1000C9950 /* PDKGeofencesGenerator.h in Headers */,
+				381D8A6324AA43BC000C9950 /* PDKLocationGeneratorViewController.h in Headers */,
+				381D8A5624AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		380D3EA726C60A6E009A1776 /* PassiveDataKit-iOS-LocationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 380D3EAD26C60A6E009A1776 /* Build configuration list for PBXNativeTarget "PassiveDataKit-iOS-LocationUITests" */;
+			buildPhases = (
+				AC758308CEA22AE677B9C9F1 /* [CP] Check Pods Manifest.lock */,
+				380D3EA426C60A6E009A1776 /* Sources */,
+				380D3EA526C60A6E009A1776 /* Frameworks */,
+				380D3EA626C60A6E009A1776 /* Resources */,
+				BC349A950A145DA8EAE19B96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				380D3EDD26C60AE8009A1776 /* PBXTargetDependency */,
+			);
+			name = "PassiveDataKit-iOS-LocationUITests";
+			productName = "PassiveDataKit-iOS-LocationUITests";
+			productReference = 380D3EA826C60A6E009A1776 /* PassiveDataKit-iOS-LocationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		380D3EB326C60AA6009A1776 /* PassiveDataKit-iOS-LocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 380D3EBC26C60AA6009A1776 /* Build configuration list for PBXNativeTarget "PassiveDataKit-iOS-LocationTests" */;
+			buildPhases = (
+				E4F02BAE890F256D0839BBD7 /* [CP] Check Pods Manifest.lock */,
+				380D3EB026C60AA6009A1776 /* Sources */,
+				380D3EB126C60AA6009A1776 /* Frameworks */,
+				380D3EB226C60AA6009A1776 /* Resources */,
+				AFD7A1BB5C91086611E545E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				380D3EBB26C60AA6009A1776 /* PBXTargetDependency */,
+				380D3EDF26C60AEB009A1776 /* PBXTargetDependency */,
+			);
+			name = "PassiveDataKit-iOS-LocationTests";
+			productName = "PassiveDataKit-iOS-LocationTests";
+			productReference = 380D3EB426C60AA6009A1776 /* PassiveDataKit-iOS-LocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		380D3EC226C60ABE009A1776 /* Test Dummy App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 380D3ED926C60AC1009A1776 /* Build configuration list for PBXNativeTarget "Test Dummy App" */;
+			buildPhases = (
+				D958D70A03E0A5930957DBCD /* [CP] Check Pods Manifest.lock */,
+				380D3EBF26C60ABE009A1776 /* Sources */,
+				380D3EC026C60ABE009A1776 /* Frameworks */,
+				380D3EC126C60ABE009A1776 /* Resources */,
+				C4CC84B36D315B6871438895 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Test Dummy App";
+			productName = "Test Dummy App";
+			productReference = 380D3EC326C60ABE009A1776 /* Test Dummy App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		381D8A2C24AA3F57000C9950 /* PassiveDataKit-iOS-Location */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381D8A4124AA3F57000C9950 /* Build configuration list for PBXNativeTarget "PassiveDataKit-iOS-Location" */;
+			buildPhases = (
+				D00B63B90295E7C1F4213EA3 /* [CP] Check Pods Manifest.lock */,
+				381D8A2824AA3F57000C9950 /* Headers */,
+				381D8A2924AA3F57000C9950 /* Sources */,
+				381D8A2A24AA3F57000C9950 /* Frameworks */,
+				381D8A2B24AA3F57000C9950 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PassiveDataKit-iOS-Location";
+			productName = PDKLocation;
+			productReference = 381D8A2D24AA3F57000C9950 /* PassiveDataKit_iOS_Location.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		381D8A2424AA3F57000C9950 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "Audacious Software";
+				TargetAttributes = {
+					380D3EA726C60A6E009A1776 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 380D3EC226C60ABE009A1776;
+					};
+					380D3EB326C60AA6009A1776 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 380D3EC226C60ABE009A1776;
+					};
+					380D3EC226C60ABE009A1776 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					381D8A2C24AA3F57000C9950 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 381D8A2724AA3F57000C9950 /* Build configuration list for PBXProject "PassiveDataKit-iOS-Location" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 381D8A2324AA3F57000C9950;
+			productRefGroup = 381D8A2E24AA3F57000C9950 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				381D8A2C24AA3F57000C9950 /* PassiveDataKit-iOS-Location */,
+				380D3EA726C60A6E009A1776 /* PassiveDataKit-iOS-LocationUITests */,
+				380D3EB326C60AA6009A1776 /* PassiveDataKit-iOS-LocationTests */,
+				380D3EC226C60ABE009A1776 /* Test Dummy App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		380D3EA626C60A6E009A1776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		380D3EB226C60AA6009A1776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		380D3EC126C60ABE009A1776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380D3ED526C60AC1009A1776 /* LaunchScreen.storyboard in Resources */,
+				380D3ED226C60AC1009A1776 /* Assets.xcassets in Resources */,
+				380D3ED026C60ABE009A1776 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381D8A2B24AA3F57000C9950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC758308CEA22AE677B9C9F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PassiveDataKit-iOS-LocationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD7A1BB5C91086611E545E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassiveDataKit-iOS-LocationTests/Pods-PassiveDataKit-iOS-LocationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassiveDataKit-iOS-LocationTests/Pods-PassiveDataKit-iOS-LocationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PassiveDataKit-iOS-LocationTests/Pods-PassiveDataKit-iOS-LocationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC349A950A145DA8EAE19B96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassiveDataKit-iOS-LocationUITests/Pods-PassiveDataKit-iOS-LocationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PassiveDataKit-iOS-LocationUITests/Pods-PassiveDataKit-iOS-LocationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PassiveDataKit-iOS-LocationUITests/Pods-PassiveDataKit-iOS-LocationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CC84B36D315B6871438895 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test Dummy App/Pods-Test Dummy App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test Dummy App/Pods-Test Dummy App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test Dummy App/Pods-Test Dummy App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D00B63B90295E7C1F4213EA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PassiveDataKit-iOS-Location-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D958D70A03E0A5930957DBCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test Dummy App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F02BAE890F256D0839BBD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PassiveDataKit-iOS-LocationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		380D3EA426C60A6E009A1776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380D3EAB26C60A6E009A1776 /* PassiveDataKit_iOS_LocationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		380D3EB026C60AA6009A1776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380D3EB726C60AA6009A1776 /* PassiveDataKit_iOS_LocationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		380D3EBF26C60ABE009A1776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380D3ECD26C60ABE009A1776 /* ViewController.m in Sources */,
+				380D3EC726C60ABE009A1776 /* AppDelegate.m in Sources */,
+				380D3ED826C60AC1009A1776 /* main.m in Sources */,
+				380D3ECA26C60ABE009A1776 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		381D8A2924AA3F57000C9950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381D8A5424AA43B1000C9950 /* PDKDarkSkyWeatherGenerator.m in Sources */,
+				381D8A4824AA425B000C9950 /* PDKLocation.m in Sources */,
+				381D8A5924AA43B1000C9950 /* PDKLocationGenerator.m in Sources */,
+				381D8A5524AA43B1000C9950 /* PDKGooglePlacesGenerator.m in Sources */,
+				381D8A5824AA43B1000C9950 /* PDKGeofencesGenerator.m in Sources */,
+				381D8A6024AA43BC000C9950 /* PDKLocationAnnotation.m in Sources */,
+				381D8A6224AA43BC000C9950 /* PDKLocationGeneratorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		380D3EBB26C60AA6009A1776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 381D8A2C24AA3F57000C9950 /* PassiveDataKit-iOS-Location */;
+			targetProxy = 380D3EBA26C60AA6009A1776 /* PBXContainerItemProxy */;
+		};
+		380D3EDD26C60AE8009A1776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 380D3EC226C60ABE009A1776 /* Test Dummy App */;
+			targetProxy = 380D3EDC26C60AE8009A1776 /* PBXContainerItemProxy */;
+		};
+		380D3EDF26C60AEB009A1776 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 380D3EC226C60ABE009A1776 /* Test Dummy App */;
+			targetProxy = 380D3EDE26C60AEB009A1776 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		380D3ECE26C60ABE009A1776 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				380D3ECF26C60ABE009A1776 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		380D3ED326C60AC1009A1776 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				380D3ED426C60AC1009A1776 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		380D3EAE26C60A6E009A1776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FA750CCD18F91BACF3BABC /* Pods-PassiveDataKit-iOS-LocationUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V664K3X7J4;
+				INFOPLIST_FILE = "PassiveDataKit-iOS-LocationUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacious-software.PassiveDataKit-iOS-LocationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Test Dummy App";
+			};
+			name = Debug;
+		};
+		380D3EAF26C60A6E009A1776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740ED51370FB667C88F56A34 /* Pods-PassiveDataKit-iOS-LocationUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V664K3X7J4;
+				INFOPLIST_FILE = "PassiveDataKit-iOS-LocationUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacious-software.PassiveDataKit-iOS-LocationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Test Dummy App";
+			};
+			name = Release;
+		};
+		380D3EBD26C60AA6009A1776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14795324C4C662613203942 /* Pods-PassiveDataKit-iOS-LocationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V664K3X7J4;
+				INFOPLIST_FILE = "PassiveDataKit-iOS-LocationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacious-software.PassiveDataKit-iOS-LocationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test Dummy App.app/Test Dummy App";
+			};
+			name = Debug;
+		};
+		380D3EBE26C60AA6009A1776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BDCF51689E1CC403F03C72F /* Pods-PassiveDataKit-iOS-LocationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V664K3X7J4;
+				INFOPLIST_FILE = "PassiveDataKit-iOS-LocationTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacious-software.PassiveDataKit-iOS-LocationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test Dummy App.app/Test Dummy App";
+			};
+			name = Release;
+		};
+		380D3EDA26C60AC1009A1776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57D55F0AE5200D8C9DC608ED /* Pods-Test Dummy App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V664K3X7J4;
+				INFOPLIST_FILE = "Test Dummy App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacious-software.Test-Dummy-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		380D3EDB26C60AC1009A1776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CA7E5186AC163C24EE2AF9 /* Pods-Test Dummy App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V664K3X7J4;
+				INFOPLIST_FILE = "Test Dummy App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacious-software.Test-Dummy-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		381D8A3F24AA3F57000C9950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		381D8A4024AA3F57000C9950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		381D8A4224AA3F57000C9950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06EB9C671A87A714D9314838 /* Pods-PassiveDataKit-iOS-Location.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V664K3X7J4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PDKLocation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacious-software.PassiveDataKit.Location.PDKLocation";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		381D8A4324AA3F57000C9950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8341C1C7A1D403E23E7F00B7 /* Pods-PassiveDataKit-iOS-Location.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V664K3X7J4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PDKLocation/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.audacious-software.PassiveDataKit.Location.PDKLocation";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		380D3EAD26C60A6E009A1776 /* Build configuration list for PBXNativeTarget "PassiveDataKit-iOS-LocationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380D3EAE26C60A6E009A1776 /* Debug */,
+				380D3EAF26C60A6E009A1776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		380D3EBC26C60AA6009A1776 /* Build configuration list for PBXNativeTarget "PassiveDataKit-iOS-LocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380D3EBD26C60AA6009A1776 /* Debug */,
+				380D3EBE26C60AA6009A1776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		380D3ED926C60AC1009A1776 /* Build configuration list for PBXNativeTarget "Test Dummy App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380D3EDA26C60AC1009A1776 /* Debug */,
+				380D3EDB26C60AC1009A1776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381D8A2724AA3F57000C9950 /* Build configuration list for PBXProject "PassiveDataKit-iOS-Location" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381D8A3F24AA3F57000C9950 /* Debug */,
+				381D8A4024AA3F57000C9950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381D8A4124AA3F57000C9950 /* Build configuration list for PBXNativeTarget "PassiveDataKit-iOS-Location" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				381D8A4224AA3F57000C9950 /* Debug */,
+				381D8A4324AA3F57000C9950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 381D8A2424AA3F57000C9950 /* Project object */;
+}

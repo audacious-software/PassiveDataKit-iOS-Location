@@ -1,18 +1,18 @@
 //
-//  PDKLocationTests.m
-//  PDKLocationTests
+//  PassiveDataKit_iOS_LocationTests.m
+//  PassiveDataKit-iOS-LocationTests
 //
-//  Created by Chris Karr on 6/29/20.
-//  Copyright © 2020 Audacious Software. All rights reserved.
+//  Created by Chris Karr on 8/12/21.
+//  Copyright © 2021 Audacious Software. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface PDKLocationTests : XCTestCase
+@interface PassiveDataKit_iOS_LocationTests : XCTestCase
 
 @end
 
-@implementation PDKLocationTests
+@implementation PassiveDataKit_iOS_LocationTests
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
