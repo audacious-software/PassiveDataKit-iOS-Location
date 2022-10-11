@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '12.0'
 
 def required_pods
   pod 'AFNetworking', '~> 4.0'
