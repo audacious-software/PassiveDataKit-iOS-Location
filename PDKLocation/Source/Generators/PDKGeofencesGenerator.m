@@ -308,8 +308,8 @@ static PDKGeofencesGenerator * sharedObject = nil;
     NSLog(@"TODO: LOG LOCATION/GEOFENCES FAILURE: %@", error);
 }
 
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-
+- (void) locationManagerDidChangeAuthorization:(CLLocationManager *)manager {
+    
 }
 
 - (void) loadNearestRegions:(CLLocation *) here forceReload:(BOOL) forceReload {

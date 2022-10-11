@@ -225,7 +225,7 @@ static PDKLocationGenerator * sharedObject = nil;
 }
 
 - (void) requestRequiredPermissions:(void (^)(void))callback {
-    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    CLAuthorizationStatus status = [self.locationManager authorizationStatus];
 
     if (callback != nil) {
         self.accessGrantedBlock = [callback copy];
@@ -417,7 +417,7 @@ static PDKLocationGenerator * sharedObject = nil;
                 [data setValue:[NSNumber numberWithDouble:thisLocation.verticalAccuracy] forKey:PDKLocationAltitudeAccuracy];
                 [data setValue:[NSNumber numberWithInteger:thisLocation.floor.level] forKey:PDKLocationFloor];
 
-                switch ([CLLocationManager authorizationStatus]) {
+                switch ([self.locationManager authorizationStatus]) {
                     case kCLAuthorizationStatusDenied:
                         [data setValue:@"denied" forKey:PDKAuthorizationStatus];
                         break;
@@ -441,9 +441,11 @@ static PDKLocationGenerator * sharedObject = nil;
                 }
                 
                 for (id<PDKDataListener> listener in self.listeners) {
-                    [[PassiveDataKit sharedInstance] receivedData:data
-                                               forCustomGenerator:[self generatorId]];
+                    [listener receivedData:data forCustomGenerator:[self generatorId]];
                 }
+
+                [[PassiveDataKit sharedInstance] receivedData:data
+                                           forCustomGenerator:[self generatorId]];
             }
         }
     } else if ([PDKLocationAccuracyModeUserProvided isEqualToString:self.mode]) {
@@ -486,10 +488,12 @@ static PDKLocationGenerator * sharedObject = nil;
         [data setValue:[NSNumber numberWithDouble:location.coordinate.longitude] forKey:PDKLocationLongitude];
 
         for (id<PDKDataListener> listener in self.listeners) {
-            [[PassiveDataKit sharedInstance] receivedData:data
-                                       forCustomGenerator:[self generatorId]];
+            [listener receivedData:data forCustomGenerator:[self generatorId]];
         }
-    } else if ([PDKLocationAccuracyModeDisabled isEqualToString:self.mode]) { //!OCLINT
+
+        [[PassiveDataKit sharedInstance] receivedData:data
+                                   forCustomGenerator:[self generatorId]];
+    } else if ([PDKLocationAccuracyModeDisabled isEqualToString:self.mode]) {
         // Do nothing...
     }
 }
@@ -499,7 +503,9 @@ static PDKLocationGenerator * sharedObject = nil;
     NSLog(@"TODO: LOG LOCATION FAILURE: %@", error);
 }
 
-- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus) status {
+- (void) locationManagerDidChangeAuthorization:(CLLocationManager *)manager {
+    CLAuthorizationStatus status = [manager authorizationStatus];
+ 
     if (status != kCLAuthorizationStatusNotDetermined) {
         [self addListener:nil options:self.lastOptions];
     }

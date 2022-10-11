@@ -301,10 +301,11 @@
 
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
 {
-    [[UIApplication sharedApplication] openURL:navigationAction.request.URL];
-    
-    decisionHandler(WKNavigationActionPolicyAllow);
+    [[UIApplication sharedApplication] openURL:navigationAction.request.URL
+                                       options:@{}
+                             completionHandler:^(BOOL success) {
+        decisionHandler(WKNavigationActionPolicyAllow);
+    }];
 }
-
 
 @end
